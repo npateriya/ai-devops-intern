@@ -12,5 +12,6 @@ def llm_ask(prompt, model="phi3"):
     # Get response from ph3 model
     ollama = Ollama(base_url='http://localhost:11434', model=model)
     print("Calling Prompt: {prompt} with model: {model}".format(prompt=prompt, model=model))
+    print("Please be patient, LLM call may take a while...")
     analysis_result = ollama.invoke(prompt)
     return analysis_result
