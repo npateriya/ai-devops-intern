@@ -5,8 +5,7 @@ AI DevOps Intern is tool designed to assist with DevOps tasks by leveraging the 
 AI DevOps Intern repo currently supports a command analyzer and a code script generator.
 
 The command analyzer executes and analyzes shell command outputs based on user input, while the code generator produces sample code/script for a given programming/devops task. 
-
-
+![AI DevOps HL Arch](docs/AI-DevOps-Intern.png)
 
 *This project serves as an introduction to the capabilities of AI and LLMs. It is a beginner-friendly project designed to demonstrate the potential of these technologies in software development. However, it is not intended for production use.*
 
