@@ -25,8 +25,7 @@ def analyze_command():
     sample_commands = {
         "df -h": "What is the disk space usage on the system?",
         "top -l 1 -n 5 -o mem": "Which processes are using the most resources?",
-        "ls -l": "What are the files in the current directory?",
-        "curl -I https://www.google.com/": "Display its output in table format"
+        "ls -l": "What are the files in the current directory?"
     }
     print ("Analyze command executes the input command and returns the analysis result for as question asked.")
     print ("The sample commands are:\n")

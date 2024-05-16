@@ -3,9 +3,9 @@ from langchain_core.prompts import PromptTemplate
 
 
 # Create function that will take user input and generate code based on the input.
-# First paramter takes user input on what sample code generation.
+# First parameter takes user input on what sample code generation.
 # Also second optional filename to save the generated code.
-# The function will genrate code by calling calling llm_ask function from llm_client.py
+# The function will generate code by calling llm_ask function from llm_client.py
 
 def get_user_input():
     sample_code_inputs = [
@@ -44,7 +44,7 @@ def generate_code(filename=None):
     prompt_template = PromptTemplate.from_template(
         """\n Generate sample code for user request: `{input}`. 
         Ensure output compiles and executable code only, if any description they should be in respective programming language comments only.
-        Do not assume any API or SDK function call, ensure code uses only accrurate and valid API and SDK function calls.
+        Do not assume any API or SDK function call, ensure code uses only accurate and valid API and SDK function calls.
         """
     )
     final_prompt = prompt_template.format(input=input)
